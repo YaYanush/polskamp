@@ -1,0 +1,44 @@
+.historyApp {
+  width: 100%;
+  height: 100%;
+}
+
+.textAreaHistory {
+  width: 100%;
+  height: 100%;
+}
+
+.pStyleHistory {
+  font-family: ABeeZee;
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(254, 249, 243, 1);
+}
+
+.historyimg {
+  width: 488px;
+  height: 358px;
+  float: right;
+  margin: 10px;
+}
+
+.sliderImg {
+  width: 1440px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 389px) and (max-width: 600px) {
+  .historyimg {
+    width: 414px;
+  }
+  .sliderImg {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .pStyleHistory{
+    font-size: 1rem;
+  }
+  .textAreaHistory{
+    
+  }
+}

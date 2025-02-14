@@ -1,0 +1,157 @@
+.productInfoSkeletApp {
+  width: 900px;
+  height: 530px;
+  margin-bottom: 20px;
+}
+.productInfoSkeletContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(255, 252, 252, 0.2);
+}
+
+.productInfoSkeletLeft {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px 0 0 30px;
+}
+
+.productInfoSkeletLeftImg {
+  width: 381px;
+  height: 292px;
+  border-radius: 30px;
+}
+
+.productInfoSkeletRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(65, 64, 64);
+  border-radius: 0 30px 30px 0;
+}
+
+.productInfoSkeletTitle {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+.lineProductInfo {
+  width: 21%;
+  border-bottom: 2px solid rgba(237, 196, 44, 1);
+  margin-left: 40px;
+}
+
+.productInfoSkeletBlockInfo {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.backgrIcon {
+  width: 43px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(54, 53, 59, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconinfoproduct {
+  width: 24px;
+  height: 29px;
+}
+.nameIcon,
+.parametrs {
+  font-family: ABeeZee;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(254, 249, 243, 1);
+}
+
+.productInfoSkeletRightImgs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.productInfoSkeletRightImgsBorder {
+  width: 194px;
+  height: 184px;
+}
+
+.productIngoBorder {
+  width: 100%;
+  height: 100%;
+}
+
+.lineproductInfoBorder {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .productInfoSkeletApp {
+    width: 85%;
+    height: 100%;
+  }
+  .productInfoSkeletContainer {
+    flex-direction: column;
+  }
+  .productInfoSkeletLeft,
+  .productInfoSkeletRight {
+    width: 100%;
+    height: 50%;
+  }
+  .productInfoSkeletLeft {
+    border-radius: 30px 30px 0px 0px;
+  }
+  .productInfoSkeletRight {
+    border-radius: 0px 0px 30px 30px;
+    height: 100%;
+  }
+  .productInfoSkeletLeftImg {
+    width: 180px;
+    height: 180px
+  }
+  .productInfoSkeletRightImgsBorder {
+    width: 150px;
+    height: 134px;
+  }
+  .productInfoSkeletTitle {
+    font-size: 1.4rem;
+  }
+
+  .parametrs{
+    font-size: 0.8rem;
+  }
+  .nameIcon{
+    font-size: 0.8rem;
+  }
+  .productInfoSkeletBlockInfo{
+    gap:3px
+  }
+  .backgrIcon{
+    width: 27px;
+    height: 30px;
+  }
+  .productInfoSkeletBlockInfo {
+    margin-left:5px;
+  }
+  .iconinfoproduct{
+    width: 19px;
+    height: 19px;
+  }
+
+}

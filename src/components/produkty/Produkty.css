@@ -1,0 +1,25 @@
+.produktyApp {
+  width: 100%;
+  height: 100%;
+}
+
+.produktyContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produktyTitle {
+  width: 100%;
+}
+
+@media screen and (min-width: 414px) and (max-width: 500px) {
+  .produktyApp {
+    width: 414px;
+  }
+  .produktyTitle {
+    margin-top: 100px;
+  }
+}

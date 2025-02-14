@@ -1,0 +1,10 @@
+.historyPage {
+  width: 1440px;
+  height: 100%;
+}
+
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .historyPage {
+    width: 414px;
+  }
+}

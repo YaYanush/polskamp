@@ -1,0 +1,11 @@
+.formOrderPageContainer {
+  width: 1440px;
+  height: 100%;
+}
+
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .formOrderPageContainer {
+    width: 414px;
+    overflow: hidden;
+  }
+}
