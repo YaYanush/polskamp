@@ -29,16 +29,17 @@
 
 @media screen and (min-width: 389px) and (max-width: 600px) {
   .historyimg {
-    width: 414px;
+    width: 100%;
   }
   .sliderImg {
     width: 100%;
     margin-top: 100px;
   }
   .pStyleHistory{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 15px;
   }
   .textAreaHistory{
-    
+    padding: 0px;
   }
 }

@@ -101,21 +101,26 @@
   overflow: hidden;
   position: absolute;
   right: 0;
+  opacity: 70%;
 }
-
+.headerRightBack{
+  max-width: 100%;
+}
 .card {
-  background: linear-gradient(108.46deg, rgba(255, 255, 255, 0.264) 0%, rgba(255, 255, 255, 0.066) 100%);
   padding: 5px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
   
   display: flex;
   flex-direction: column;
+  gap: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+  transition: transform 0.3s ease-in-out;
   
 }
-
+.card:hover{
+  transform: scale(1.05);
+}
 @media screen and (min-width: 389px) and (max-width: 500px) {
   .headerDownApp {
     width: 100%;
@@ -154,5 +159,10 @@
   .mainInfoTxt{
     font-size: 0.8rem;
   }
-  
+  .headerRight {
+    width: 190vw;
+  }
+  .headerDownLeftPath {
+    top: 19%;
+  }  
 }

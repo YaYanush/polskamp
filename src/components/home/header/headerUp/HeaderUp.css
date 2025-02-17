@@ -96,7 +96,11 @@
     width: 100%;
     z-index: 20;
     margin-top: 0;
+    height: 50px;
     position: fixed;
+  }
+  .headerUpLogo{
+    height: 40px;
   }
   .logoContainer {
     width: 80%;

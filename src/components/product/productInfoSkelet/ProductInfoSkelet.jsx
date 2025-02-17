@@ -67,23 +67,7 @@ const ProductInfoSkelet = ({ product }) => {
                 <p className="nameIcon">Packing method: </p>
                 <p className="parametrs">polyblocks/carton</p>
               </div>
-              <div className="productInfoSkeletRightImgs">
-                <div className="productInfoSkeletRightImgsBorder">
-                  <img
-                    className="productIngoBorder"
-                    src={product.pacing1}
-                    alt="ProductIngoBorder"
-                  />
-                </div>
-                <div className="lineproductInfoBorder" />
-                <div className="productInfoSkeletRightImgsBorder">
-                  <img
-                    className="productIngoBorder"
-                    src={product.pacing2}
-                    alt="ProductIngoBorder"
-                  />
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

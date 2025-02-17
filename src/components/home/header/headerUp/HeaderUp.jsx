@@ -34,7 +34,7 @@ const HeaderUp = () => {
                 <>
                   <div onClick={() => setShowMenu(!showMenu)} className="wrapperLink" key={category.id}>
                     <Link
-                      to={`/produkty/${category.id}`}
+                      to={`/product/${category.id}`}
                       className="linkStyleBlock"
                     >
                       {category.title}

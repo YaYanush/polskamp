@@ -1,5 +1,5 @@
 import Logo from "./logo 1.png";
-import ChickenMeet from "./chicken_meat 1.png";
+import ChickenMeet from "./chicken_meat_1.png";
 import Bacground from "./Removal 1.png";
 import Vectors from "./Vector.png";
 import Product1 from "./p1 1.png";
@@ -11,10 +11,10 @@ import BacgroundFooter from "./bacgroundFooter.png";
 import WhatSapp from "./whatsapp.png";
 import Photo1 from "./image 1.png";
 import Photo2 from "./image 2.png";
-import OptionIcon1 from "./optionIcon1.png";
-import OptionIcon2 from "./optionIcon2.png";
-import OptionIcon3 from "./optionIcon3.png";
-import OptionIcon4 from "./optionIcon4.png";
+import OptionIcon1 from "./optionIcon1.svg";
+import OptionIcon2 from "./optionIcon2.svg";
+import OptionIcon3 from "./optionIcon3.svg";
+import OptionIcon4 from "./optionIcon4.svg";
 import MDM1 from "./image 11.png";
 import MDM2 from "./image 12.png";
 import MDM3 from "./image 13.png";
@@ -31,7 +31,8 @@ import map from "./2025-02-13_21-45-20.png";
 import Historys from "./history.jpg";
 import SlideFon from "./4en.jpg";
 import TechnologyFon from "./technologia.jpg";
-
+import Polyblocks from "./polyblocks.png";
+import Cartons from "./cartons.png";
 export {
   Logo,
   ChickenMeet,
@@ -66,4 +67,6 @@ export {
   SlideFon,
   Historys,
   TechnologyFon,
+  Polyblocks,
+  Cartons
 };
