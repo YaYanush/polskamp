@@ -124,4 +124,7 @@
     padding-bottom: 15px;
     border-radius: 12px;
   }
+  .bodyApp {
+    margin-top: 10%;
+  }
 }
