@@ -33,7 +33,6 @@
 }
 /*packing methods*/
 .packing-container {
-  background: linear-gradient(90deg, #4e4e59 0%, #201c20 43.44%);
   padding: 50px 20px;
   text-align: center;
   color: white;
@@ -125,6 +124,6 @@
     border-radius: 12px;
   }
   .bodyApp {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 }

@@ -4,3 +4,71 @@
   align-items: center;
   gap: 20px;
 }
+
+.next_section{
+  display: flex;
+  margin: 10px;
+  gap:30px;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+}
+
+
+@media screen and (min-width: 374px) and (max-width: 500px){
+  .category-link {
+    text-decoration: none; /* Убираем стандартное подчёркивание ссылки */
+  }
+  
+  .img-container {
+    width: 100px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px rgb(70, 69, 69) solid;
+    
+  }
+  
+  
+  .text-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: ABeeZee, sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .img-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.75);
+  }
+  
+  .imgLink {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    transition: opacity 0.2s ease;
+    border-radius: 8px;
+  }
+  .img-container:hover .imgLink {
+    opacity: 0.8;
+  }
+  
+}

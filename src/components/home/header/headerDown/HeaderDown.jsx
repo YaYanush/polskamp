@@ -1,6 +1,7 @@
 import React from "react";
 import { ChickenMeet, Bacground } from "../../../../img/index";
 import "./HeaderDown.css";
+import { Link } from "react-router-dom";
 
 const HeaderDown = () => {
   return (
@@ -19,6 +20,7 @@ const HeaderDown = () => {
                   <h3 className="headerLeftFooterTitile">MDM it's our feature product!</h3>
                 </div>
               <div className="headerLeftFooterInfo">
+                <Link to={`/product/1`}>
                 <div>
                   <img
                     className="headerLeftFooterImg"
@@ -26,6 +28,7 @@ const HeaderDown = () => {
                     alt="chickenMeet"
                   /> 
                 </div>
+                </Link>
                 
               </div>
               </div>

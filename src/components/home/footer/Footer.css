@@ -6,7 +6,7 @@
 .footerContainer {
   width: 1440px;
   height: 100%;
-  background-image: url("../../../img/bacgroundFooter.png");
+  background: rgb(164 165 166);
 }
 
 .gridFooterInfo {

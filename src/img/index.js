@@ -33,6 +33,8 @@ import SlideFon from "./4en.jpg";
 import TechnologyFon from "./technologia.jpg";
 import Polyblocks from "./polyblocks.png";
 import Cartons from "./cartons.png";
+import SizesMDM1 from "./sizes.png"
+import DescMDM1 from "./desc1mdm.png"
 export {
   Logo,
   ChickenMeet,
@@ -68,5 +70,7 @@ export {
   Historys,
   TechnologyFon,
   Polyblocks,
-  Cartons
+  Cartons,
+  SizesMDM1,
+  DescMDM1
 };

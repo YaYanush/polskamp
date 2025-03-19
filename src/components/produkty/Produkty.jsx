@@ -8,7 +8,7 @@ const Produkty = ({ product, category }) => {
       <div className="produktyContainer">
         <div className="produktyTitle">
           <h1 className="bodyTitle">{category.title}</h1>
-        </div>{" "}
+        </div>
       
           <ProductInfoSkelet product={product} />
         
