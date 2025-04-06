@@ -1,0 +1,13 @@
+.technologyPage {
+  width: 100%;
+  overflow:hidden
+}
+
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .technologyPage {
+    
+  }
+  .containerImage{
+    margin: 0 auto;
+  }
+}

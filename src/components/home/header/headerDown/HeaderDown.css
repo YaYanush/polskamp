@@ -1,0 +1,168 @@
+@import "../../../../fonts.css";
+
+.headerDownApp {
+  height: 100%;
+}
+.headerDownContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.headerDownLeftPath {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 5px;
+}
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 578px;
+  height: 514px;
+}
+
+.headerLeftTitle {
+  width: 553px;
+  height: 148px;
+}
+.headerLeftTitleH1 {
+  width: 100%;
+  height: 100%;
+  color: rgba(254, 249, 243, 1);
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.headerLeftFooter {
+  width: 100%;
+  height: 178px;
+  
+}
+
+.headerLeftFooterTitile {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(254, 249, 243, 1);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+}
+
+.headerLeftFooterInfo {
+  width: 100%;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.headerLeftFooterImg {
+  width: 64%;
+  height: 100%;
+}
+
+.headerLeftFooterLine {
+  height: 100%;
+  border: 1px solid rgba(254, 249, 243, 1);
+}
+
+.headerLeftFooterMainInfo {
+  width: 198px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mainInfoTitile {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(254, 249, 243, 1);
+  margin-bottom: 0;
+}
+
+.mainInfoTxt {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(254, 249, 243, 1);
+}
+
+.headerRight {
+  width: 1350px;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  opacity: 70%;
+}
+.headerRightBack{
+  max-width: 100%;
+}
+.card {
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 15px;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .headerDownApp {
+    width: 100%;
+  }
+  .headerDownLeftPath {
+    width: 100%;
+  }
+  
+  .headerLeft {
+    width: 100%;
+  }
+  .headerLeftTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .headerLeftTitleH1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .headerLeftFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 55%;
+    flex-direction: column;
+   
+  }
+  .headerRight {
+    height: 62%;
+  }
+  .card{
+    width: 80%;
+    margin: auto
+  }
+  .mainInfoTxt{
+    font-size: 0.8rem;
+  }
+  .headerRight {
+    width: 190vw;
+  }
+  .headerDownLeftPath {
+    top: 19%;
+  }  
+}

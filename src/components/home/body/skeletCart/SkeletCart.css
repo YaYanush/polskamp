@@ -1,0 +1,148 @@
+.skeletApp {
+  width: 315px;
+  height: 340px;
+}
+.skeletAppBase {
+  width: 669px;
+  height: 670px;
+}
+.skeletContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background: linear-gradient(108.46deg, rgb(88 82 82 / 26%) 0%, rgba(255, 255, 255, 0.066) 100%);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.skeletContainer:hover{
+  transform: scale(1.05);
+}
+
+.skeletImg{
+ max-width: 250px;
+ max-height: 150px;
+}
+
+
+
+.skeletInfoContainer,
+.skeletInfoContainerBase {
+  width: 291px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.skeletInfoContainerBase {
+  width: 629px;
+}
+
+.skeletTitle,
+.skeletTitleBase {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(254, 249, 243, 1);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+
+.skeletTitleBase {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  filter: none;
+}
+
+.skeletDescription,
+.skeletDescriptionBase {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(254, 249, 243, 1);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  text-align: center;
+}
+.skeletDescriptionBase {
+  font-size: 16px;
+  filter: none;
+}
+
+.skeletButtonContainer {
+ 
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.skeletButton,
+.skeletButtonBase {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(237, 196, 44, 1);
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform: translate(0%);
+  margin-left: 5px;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+.skeletButtonBase {
+  margin-left: 10px;
+}
+
+.iconSkelet {
+  color: rgba(237, 196, 44, 0.8);
+  font-size: 22px;
+  transform: translate(0%);
+}
+
+.skeletButtonContainer:hover .skeletButton {
+  transition: transform 0.5s ease;
+  transform: translateX(5%);
+}
+.skeletButtonContainer:hover .skeletButtonBase {
+  transition: transform 0.5s ease;
+  transform: translateX(5%);
+}
+
+.skeletButtonContainer:hover .iconSkelet {
+  transition: transform 0.5s ease;
+  transform: translateX(20%);
+}
+
+@media screen and (min-width: 389px) and (max-width: 500px) {
+  .skeletAppBase {
+    width: 315px;
+    height: 100%;
+  }
+  .skeletImgBase {
+    width: 283px;
+    height: 169px;
+  }
+  .skeletInfoContainerBase {
+    width: 90%;
+
+  }
+  .skeletTitleBase {
+    font-size: 16px;
+  }
+  .skeletDescriptionBase {
+    font-size: 14px;
+  }
+
+  .skeletImg,
+.skeletImgBase {
+  max-width: 250px;
+  height: 169px;
+  border-radius: 5px;
+  
+  margin-top: 10px;
+}
+}
