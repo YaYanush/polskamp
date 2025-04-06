@@ -12,6 +12,10 @@
 
     object-fit: contain; /* Сохраняет пропорции и центрирует */
 }
+.slider_container {
+  width: 100%;
+  margin: 0 auto;
+}
 
 
 @media screen and (min-width: 374px) and (max-width: 500px){
@@ -19,6 +23,9 @@
     width: 350px;
     margin: 0 auto;
   }
+  .swiper-slide{
+    height: 350px;
+  } 
   .slide-image {
     display: block;
     margin: 0 auto; /* Центрирует изображение по горизонтали */

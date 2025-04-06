@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const SkeletCart = ({ id, img, title, desc }) => {
   return (
     <div className={id === 1 ? "skeletAppBase" : "skeletApp"}>
+      <Link to={`/product/${id}`}>
       <div className="skeletContainer" key={id}>
         <img
           className={id === 1 ? "skeletImgBase" : "skeletImg"}
@@ -26,15 +27,19 @@ const SkeletCart = ({ id, img, title, desc }) => {
             {desc}
           </p>
         </div>
-        <Link to={`/product/${id}`}>
+        
           <div className="skeletButtonContainer">
-            <button className={id === 1 ? "skeletButtonBase" : "skeletButton"}>
-              MORE INFO
-            </button>
+            <div>
+              <button className={id === 1 ? "skeletButtonBase" : "skeletButton"}>
+                MORE INFO
+              </button>
+            </div>
+            
             <IoIosArrowForward className="iconSkelet" />
           </div>
-        </Link>
+        
       </div>
+      </Link>
     </div>
   );
 };

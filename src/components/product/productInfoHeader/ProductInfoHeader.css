@@ -39,6 +39,7 @@
   font-family: ABeeZee;
   font-weight: 400;
   font-size: 1rem;
+  text-align: justify;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -55,6 +56,8 @@
   .productInfoHeaderTitile {
     text-align: center;
     margin: 10px 0 10px 0;
+    text-decoration: underline  2px solid rgba(237, 196, 44, 1);
+    text-underline-offset: 7px;
   }
   .productBorderBox {
     width: 350px;
@@ -63,8 +66,9 @@
 
   }
   .productImgBox {
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height:80%;
+    max-height: 250px;
   }
   .productTextContainer {
     width: 82%;

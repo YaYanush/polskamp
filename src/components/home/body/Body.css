@@ -4,6 +4,9 @@
   width: 100%;
   height: 100%;
   margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bodyContainer {
@@ -11,11 +14,12 @@
 }
 
 .bodyTitle {
-  margin-left: 10px;
   font-family: ABeeZee, sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: rgba(254, 249, 243, 1);
+  text-decoration: underline  2px solid rgba(237, 196, 44, 1);
+  text-underline-offset: 5px;
 }
 
 .gridBodyContainer {
@@ -54,7 +58,7 @@
 }
 
 .packing-card {
-  background: #2a2a33;
+  background: #343437;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -84,11 +88,53 @@
     margin-bottom: 10px;
 }
 
-/*/packing methods*/
+
+.photo_container{
+  width: 100%; /* Takes full width of parent */
+  overflow: hidden; /* Prevents image overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title_photo{
+  width: 90%;
+  height: 100%;
+  object-fit:contain
+}
+
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  
+}
+
+/*/contact section*/
+.contact-item {
+  display: flex;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/*/contact section*/
+
+
+
 @media screen and (min-width: 389px) and (max-width: 500px) {
   .bodyContainer {
-    height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
+  
   .bodyTitle {
     justify-content: center;
     font-size: 1.2rem;
@@ -107,23 +153,78 @@
     flex-direction: column;
   }
   .ourProducts{
-  margin-left: 20px;
   font-family: ABeeZee, sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
+  text-align: justify;
   color: rgba(254, 249, 243, 1);
   display: inline-block;
-  max-width: 100%; /* Ограничивает ширину */
-  word-wrap: break-word; /* Переносит длинные слова */
+  max-width: 100%; 
+  word-wrap: break-word; 
+  margin-top:10px;
   }
   .prodDescription{
     margin:auto;
-    width: 80%;
+    width: 90%;
     padding: 5px;
     padding-bottom: 15px;
     border-radius: 12px;
   }
   .bodyApp {
-    margin-top: 10%;
+    
   }
+
+  .labeles_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10%;
+  }
+  
+  .icon_wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .labeles{
+    width: 30%; 
+    object-fit: contain; 
+  }
+  .icon {
+    font-size: 20px;
+    color: rgba(237, 196, 44, 1); /* Example icon color */
+  }
+  .map-wrapper{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 5%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    span{
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: rgba(254, 249, 243, 1);
+    }
+  }
+  .contact-us-label{
+    font-family: ABeeZee, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(254, 249, 243, 1);
+    text-decoration: underline 2px solid rgba(237, 196, 44, 1);
+    text-underline-offset: 5px;
+  }
+  
 }

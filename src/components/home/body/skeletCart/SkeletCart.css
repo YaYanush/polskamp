@@ -23,18 +23,12 @@
   transform: scale(1.05);
 }
 
-.skeletImg,
-.skeletImgBase {
-  width: 283px;
-  height: 169px;
-  border-radius: 5px;
-  background: rgba(63, 61, 60, 1);
-  margin-top: 10px;
+.skeletImg{
+ max-width: 250px;
+ max-height: 150px;
 }
-.skeletImgBase {
-  width: 560px;
-  height: 414px;
-}
+
+
 
 .skeletInfoContainer,
 .skeletInfoContainerBase {
@@ -79,7 +73,7 @@
 }
 
 .skeletButtonContainer {
-  width: 100%;
+ 
   height: 28px;
   display: flex;
   align-items: center;
@@ -142,4 +136,13 @@
   .skeletDescriptionBase {
     font-size: 14px;
   }
+
+  .skeletImg,
+.skeletImgBase {
+  max-width: 250px;
+  height: 169px;
+  border-radius: 5px;
+  
+  margin-top: 10px;
+}
 }

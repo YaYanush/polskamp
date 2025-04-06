@@ -84,6 +84,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  margin-top:30px;
 }
 
 .downLineTxt {
@@ -120,5 +121,9 @@
   }
   .rightFooterTxt{
     padding-left: 1.2rem;
+  }
+
+  .downLineTxt {
+    font-size: 0.7rem;
   }
 }

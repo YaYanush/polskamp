@@ -2,12 +2,16 @@ import React from "react";
 import { map } from "../../img";
 import SkeletDataDepartament from "./SkeletDataDepartament";
 import Inputs from "../formOrder/Inputs/Inputs";
+import Map from "../map/Map"
+import "./Contact.css";
 
 const Contact = () => {
   return (
     <div className="contactContainer">
       <div className="contactApp">
-        <img className="map" src={map} alt="map" />
+        <div className="map-holder">
+          <Map />
+        </div>
         <div className="wrapperTitleFormOrder">
           <h1 className="titleWarpperForm">Contact</h1>
           <div className="lineWrapperFormOrder" />
@@ -17,7 +21,7 @@ const Contact = () => {
             <SkeletDataDepartament
               name="Address of factory"
               line1="05-462 Duchnów"
-              line2="ul. Szosa Mińska 36"
+              line2="ul. Bosmańska 23"
               line3="Polska"
             />
             <SkeletDataDepartament

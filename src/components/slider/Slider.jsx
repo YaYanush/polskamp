@@ -26,8 +26,8 @@ const Slider= ({ images }) => {
       className="slider-container"
       breakpoints={{
         640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 }
+        768: { slidesPerView: 1 },
+        1024: { slidesPerView: 1 }
       }}
     >
       {images.map((image, index) => (
