@@ -43,6 +43,8 @@
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 100;
+  background: none;
+  color: white;
 }
 
 .left-arrow {
