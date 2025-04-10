@@ -18,8 +18,10 @@
   font-weight: 400;
   font-size: 36px;
   color: rgba(254, 249, 243, 1);
-  text-decoration: underline  2px solid rgba(237, 196, 44, 1);
-  text-underline-offset: 5px;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(237, 196, 44, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
 }
 
 .gridBodyContainer {
