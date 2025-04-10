@@ -56,7 +56,9 @@
   .productInfoHeaderTitile {
     text-align: center;
     margin: 10px 0 10px 0;
-    text-decoration: underline  2px solid rgba(237, 196, 44, 1);
+    text-decoration-line: underline;
+    text-decoration-color: rgba(237, 196, 44, 1);
+    text-decoration-thickness: 2px;
     text-underline-offset: 7px;
   }
   .productBorderBox {
