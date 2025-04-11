@@ -29,7 +29,7 @@
   .slide-image {
     display: block;
     margin: 0 auto; /* Центрирует изображение по горизонтали */
-    width: 80%; /* Подстраивается под размер контейнера */
+    width: 100%; /* Подстраивается под размер контейнера */
     max-width: 100%; /* Не выходит за границы контейнера */
     height: 100%; /* Занимает всю высоту контейнера */
     object-fit: contain; /* Сохраняет пропорции и центрирует */
@@ -41,6 +41,12 @@
     color: #FFFFFF;
   }
 
+  .swiper-button-prev{
+    left: -10px;
+  }
+  .swiper-button-next{
+    right: -10px;
+  }
   .swiper-pagination-bullet-active{
     background: #FFFFFF;
   }
