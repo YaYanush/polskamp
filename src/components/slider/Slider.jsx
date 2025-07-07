@@ -12,9 +12,9 @@ const Slider= ({ images }) => {
 
   useEffect(() => {
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(0); // Переключает на первый слайд
+      swiperRef.current.swiper.slideTo(0);
     }
-  }, [images]); // При изменении списка изображений слайдер сбрасывается
+  }, [images]);
 
   return (
     <Swiper

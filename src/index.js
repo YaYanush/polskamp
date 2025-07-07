@@ -3,14 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import { Footer } from "./components/home";
+import { LanguageProvider } from "./LanguageContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="">
-      <App />
-
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter basename="">
+          <App />
+      </BrowserRouter>
+    </LanguageProvider>
   </React.StrictMode>
 );

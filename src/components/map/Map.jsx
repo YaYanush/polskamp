@@ -20,7 +20,7 @@ const Map = () => {
 
   return (
     <div className="map-container">
-      <p className="company-address">📍Bosmańska 23, 05-462 Duchnów, Polska</p>
+      
       <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -29,6 +29,7 @@ const Map = () => {
           <Popup>Polskamp</Popup>
         </Marker>
       </MapContainer>
+      <p className="company-address">📍Bosmańska 23, 05-462 Duchnów, Polska</p>
       
     </div>
   );

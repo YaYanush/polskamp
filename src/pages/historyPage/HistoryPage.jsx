@@ -7,7 +7,6 @@ import "./HistoryPage.css";
 const HistoryPage = () => {
   return (
     <div className="historyPage">
-      <HeaderUp />
       <History />
       <Footer />
     </div>

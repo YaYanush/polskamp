@@ -6,7 +6,6 @@ import HeaderUp from "../../components/home/header/headerUp/HeaderUp";
 const ProductPage = () => {
   return (
     <div className="productPageApp">
-      <HeaderUp />
       <ProducInfo />
     </div>
   );

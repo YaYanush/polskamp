@@ -1,6 +1,8 @@
+  
   .map-container {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 350px;
+
   }
   
   .leaflet-container {
@@ -17,3 +19,12 @@
     margin-top: 10px;
     text-align: center;
   }
+  
+  @media (max-width: 768px){
+    .map-container {
+      width: 100%;
+      height: 100%;
+    }
+    
+  }
+  

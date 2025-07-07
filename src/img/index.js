@@ -23,11 +23,8 @@ import ChickenSkin2 from "./image22.png";
 import ChickenSkin3 from "./image23.png";
 import Mortadella1 from "./image 31.png";
 import Mortadella2 from "./image32.png";
-import Mortadella3 from "./image33.png";
-import Sausages1 from "./image41.png";
 import Sausages2 from "./image42.png";
 import Sausages3 from "./image43.png";
-import map from "./2025-02-13_21-45-20.png";
 import Historys from "./history.jpg";
 import SlideFon from "./4en.jpg";
 import TechnologyFon from "./technologia.jpg";
@@ -63,7 +60,6 @@ import Desc_salami from './desc_salami.png'
 import Salchichas_packed from './SALCHICHAS_packed.png'
 import Salchichas from './SALCHICHAS.png'
 import Spread from './spread.png'
-import Chicken_spread from './spread_chicken.png'
 import Desc_spread from './desc_spread.png'
 import Szynkovka from './szynkovka.png'
 import Szynkovka_pack from './szynkovka_pack.png'
@@ -81,7 +77,9 @@ import C5 from './c5.png'
 import C6 from './c6.png'
 import C7 from './c7.png'
 import Factory from './factory.jpg'
-
+import Wings_box from './wing_in_box.png'
+import Chicken_legs from './chicken_legs.png'
+import Chicken_box from './chicken_box.png'
 export {
   Logo,
   ChickenMeet,
@@ -108,11 +106,8 @@ export {
   ChickenSkin3,
   Mortadella1,
   Mortadella2,
-  Mortadella3,
-  Sausages1,
   Sausages2,
   Sausages3,
-  map,
   SlideFon,
   Historys,
   TechnologyFon,
@@ -148,7 +143,6 @@ export {
   Salchichas_packed,
   Salchichas,
   Spread,
-  Chicken_spread,
   Desc_spread,
   Szynkovka,
   Szynkovka_pack,
@@ -165,5 +159,8 @@ export {
   C5,
   C6,
   C7,
-  Factory
+  Factory,
+  Wings_box,
+  Chicken_legs,
+  Chicken_box
 };

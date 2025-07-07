@@ -1,113 +1,141 @@
-import React, { useState } from "react";
-import { Logo } from "../../../../img/index";
+import { useLanguage } from "../../../../LanguageContext";
+import { Halal, Quality } from "../../../../img/index";
+import { motion } from "framer-motion";
 import "./HeaderUp.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
-import dataCategory from "../../../product/dataCategory";
 
 const HeaderUp = () => {
-  const [showMenu, setShowMenu] = useState(false);
-const [showZakladMenu, setShowZakladMenu] = useState(false); // Independent toggle for ZAKŁAD
+  const { t } = useLanguage();
 
-const handleToggleZaklad = () => {
-  setShowZakladMenu(!showZakladMenu);
-};
-
-return (
-  <div className="headerUpApp">
-    <div className="headerUpContainer">
-      <div className="logoContainer">
-        <Link to="/">
-          <img className="headerUpLogo" src={Logo} alt="logo" />
-        </Link>
-      </div>
-
-      {/* Burger Menu Button */}
-      <div className="burger-container">
-        <button
-          className="burger-button"
-          onClick={() => {
-            setShowMenu(!showMenu);
-            setShowZakladMenu(false); // Ensure ZAKŁAD menu closes when toggling the burger menu
+  return (
+    <div className="main">
+      <motion.div
+        className="head"
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 80,
+          damping: 12,
+        }}
+        viewport={{ once: true }}
+      >
+        <motion.h1
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 14,
+            delay: 0.2,
           }}
+          viewport={{ once: true }}
         >
-          <GiHamburgerMenu />
-        </button>
-      </div>
+          Polskamp<sup style={{ fontSize: "22px" }}>©</sup>
+        </motion.h1>
+        <motion.h1
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 14,
+            delay: 0.4,
+          }}
+          viewport={{ once: true }}
+        >
+          Poultry production
+        </motion.h1>
+        <div className="circle1"></div>
+      </motion.div>
 
-      {/* Links inside Burger Menu */}
-      <div className={`linkHeader ${showMenu ? "show" : ""}`}>
+      <div className="flexbox">
+        <div className="left">
+          <motion.div
+            className="b1 box"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.2,
+            }}
+            viewport={{ once: true }}
+          >
+            <h1>30+</h1>
+            <p>COUNTRIES</p>
+          </motion.div>
 
-        {/* PRODUKTY Section */}
-        <div className="allLinkStyleBlock">
-          <p className="linkStyleHeader">PRODUKTY</p>
-          <div className="infoLinkStyleBlock">
-            {dataCategory.map((category) => (
-              <div
-                onClick={() => {
-                  setShowMenu(false); // Close the entire menu when selecting an item
-                }}
-                className="wrapperLink"
-                key={category.id}
-              >
-                <Link to={`/product/${category.id}`} className="linkStyleBlock">
-                  {category.title}
-                </Link>
-              </div>
-            ))}
-          </div>
+          <motion.div
+            className="b2 box"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.4,
+            }}
+            viewport={{ once: true }}
+          >
+            <h1>MODERN</h1>
+            <p>TECHNOLOGY OF PRODUCTION</p>
+          </motion.div>
         </div>
 
-        {/* ZAMÓWIENIE Link */}
-        <Link to={`/formOrder`}>
-          <p className="linkStyleHeader">ZAMÓWIENIE</p>
-        </Link>
+        <motion.div
+          className="mid"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 90,
+            damping: 14,
+            delay: 0.6,
+          }}
+          viewport={{ once: true }}
+        >
+          <img
+            src="https://cdn0.uncomo.com/es/posts/2/4/9/que_pasa_si_como_pollo_en_mal_estado_52942_orig.jpg"
+            alt="face"
+          />
+        </motion.div>
 
-        {/* 🔥 FIXED: ZAKŁAD Section */}
-        <div className="allLinkStyleBlock">
-          <p className="linkStyleHeader" onClick={handleToggleZaklad}>
-            ZAKŁAD
+        <motion.div
+          className="right"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 12,
+            delay: 0.8,
+          }}
+          viewport={{ once: true }}
+        >
+          <p>
+            Eksportujemy nasze produkty do kilkudziesięciu krajów Europy, Azji oraz
+            bliskiego wschodu. Zapraszamy do zapoznania się z asortymentem!
           </p>
+        </motion.div>
 
-          {showZakladMenu && ( // Only show when state is true
-            <div className="infoLinkStyleBlock">
-              <div className="wrapperLink">
-                <Link
-                  to="/history"
-                  className="linkStyleBlock"
-                  onClick={() => {
-                    setShowMenu(false); 
-                    setShowZakladMenu(false);
-                  }}
-                >
-                  History
-                </Link>
-              </div>
-              <div className="wrapperLink">
-                <Link
-                  to="/technology"
-                  className="linkStyleBlock"
-                  onClick={() => {
-                    setShowMenu(false); 
-                    setShowZakladMenu(false);
-                  }}
-                >
-                  Technology
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* KONTAKT Link */}
-        <Link to="/contactForm">
-          <p className="linkStyleHeader" onClick={() => setShowMenu(false)}>KONTAKT</p>
-        </Link>
+        <div className="circle2"></div>
       </div>
-    </div>
-  </div>
-);
 
+      <motion.div
+        className="labeles_container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="icon_wrapper">
+          <img src={Quality} alt="Photo1" className="labeles" />
+          <img src={Halal} alt="Photo2" className="labeles" />
+        </div>
+      </motion.div>
+    </div>
+  );
 };
 
 export default HeaderUp;

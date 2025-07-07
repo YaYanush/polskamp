@@ -8,15 +8,31 @@
   height: 100%;
 }
 
+.map-holder{
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.map-container{
+  margin: 0 auto;
+  width: 73%;
+}
+
 .gridContainerApp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 2rem;
+  justify-items: center;
 }
 
 .leftGridContainer {
   width: 50%;
+}
+.rightGridContainer {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .settingLeftGridTitle {
@@ -26,7 +42,6 @@
 .leftGridContainertitle {
   display: flex;
   align-items: center;
-
   height: 40px;
   background: rgba(14, 16, 28, 1);
   margin: 0;
@@ -51,13 +66,14 @@
   .gridContainerApp {
     display: flex;
     flex-direction: column;
+    padding: 2px;
   }
   .leftGridContainer {
     display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin-bottom: 20px;
-        margin-left: 5px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-left: 5px;
   }
   .map-holder{
     display: flex;
