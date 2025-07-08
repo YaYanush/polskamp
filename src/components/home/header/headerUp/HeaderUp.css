@@ -59,7 +59,7 @@ button {
 
 .circle1 {
   /* border: 2px solid; */
-  width: 400px;
+  width: 200px;
   height: 400px;
   position: absolute;
   top: 20%;
@@ -145,10 +145,10 @@ button {
 }
 .circle2 {
   /* border: 2px solid; */
-  width: 400px;
+  width: 200px;
   height: 400px;
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 0px;
   border-radius: 50%;
   background: radial-gradient(
@@ -292,7 +292,7 @@ button {
     text-align: center;
     text-wrap: wrap;
   }
-  .head .circle1 {
+  .circle1 {
     /* border: 2px solid; */
     width: 150px;
     height: 300px;
