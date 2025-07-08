@@ -72,7 +72,7 @@ button {
     transparent 100%
   );
   filter: blur(60px);
-  z-index: 1000;
+  z-index: 10000000;
 }
 
 .flexbox {
@@ -157,7 +157,7 @@ button {
     transparent 100%
   );
   filter: blur(60px);
-  z-index: 1000;
+  z-index: 10000000;
 }
 
 @media (max-width: 1060px) {
