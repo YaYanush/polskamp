@@ -63,7 +63,6 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
-    z-index: 10000000000;
 
 }
 
@@ -85,7 +84,7 @@
 
 .submenu-link {
   color: #ededed;
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
   font-family: ABeeZee, sans-serif;
 }
