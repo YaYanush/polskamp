@@ -21,6 +21,8 @@ const HeaderUp = () => {
 
   return (
     <div className="main">
+      <div className="circle1"></div>
+      <div className="circle2"></div>
       <motion.div
         className="head"
         initial={{ x: -100, opacity: 0 }}
@@ -55,7 +57,7 @@ const HeaderUp = () => {
         >
           {t("poultry_prod")}
         </motion.h1>
-        <div className="circle1"></div>
+        
       </motion.div>
 
       <div className="flexbox">
@@ -124,7 +126,7 @@ const HeaderUp = () => {
           </p>
         </motion.div>
 
-        <div className="circle2"></div>
+        
       </div>
 
       <motion.div
