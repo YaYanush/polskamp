@@ -61,7 +61,9 @@ const Inputs = () => {
   };
 
   return (
-    <form className="inputContainerFormOrder" onSubmit={handleSubmit}>
+    <>
+      <p className="makeOrder">Formularz kontaktowy</p> 
+      <form className="inputContainerFormOrder" onSubmit={handleSubmit}>
       <div className="inputSkeletApp">
         <p className="nameInputSkelet">First name:</p>
         <input
@@ -135,6 +137,8 @@ const Inputs = () => {
       </div>
       {status && <p style={{ marginLeft: "20px", color: "green" }}>{status}</p>}
     </form>
+    </>
+    
   );
 };
 

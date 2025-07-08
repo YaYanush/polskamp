@@ -43,6 +43,7 @@ const Contact = () => {
               line3="finanse@polskamp.pl"
             />
           </div>
+          
           <div className="rightGridContainer">
             <Inputs />
           </div>

@@ -13,7 +13,14 @@
   margin-top: 10px;
 }
 
+.makeOrder{
+  text-align: center;
+  font-family: ABeeZee;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(254, 249, 243, 1);
 
+}
 .gridContainerApp {
   display: grid;
   grid-template-columns: 1fr 1fr;
