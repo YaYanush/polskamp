@@ -157,7 +157,7 @@ button {
     transparent 100%
   );
   filter: blur(60px);
-  z-index: 0;
+  z-index: auto;
 }
 
 
