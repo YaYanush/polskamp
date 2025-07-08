@@ -56,6 +56,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/contactForm" className="nav-link">{t("contact")}</Link>
+          <Link to="/catalogs" className="nav-link">CATALOGS</Link>
         </nav>
 
         {/* Mobile Nav Menu */}
@@ -84,6 +85,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/contactForm" className="burger-link" onClick={toggleMenu}>{t("contact")}</Link>
+          <Link to="/catalogs" className="burger-link" onClick={toggleMenu}>CATALOGS</Link>
         </nav>
       </div>
     </header>

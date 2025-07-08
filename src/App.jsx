@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import {LanguageSwitcher} from "../src/components/lang/LanguageSwitcher"
 import Navbar from "./components/navbar/Navbar"
+import PdfViewer from "./components/pdf/PdfViewer";
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/contactForm" element={<ContactPage />} />
         <Route path="/technology" element={<TechnologyPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/catalogs" element={<PdfViewer />} />
       </Routes>
     </>
   );
