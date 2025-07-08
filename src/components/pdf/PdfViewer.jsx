@@ -30,7 +30,7 @@ const PdfViewer = () => {
               rel="noopener noreferrer"
               className="pdf-button"
             >
-              Otwóż
+              Otwórz
             </a>
           </div>
         ))}
