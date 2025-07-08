@@ -81,6 +81,7 @@
     .langSwitcherContainer{
         left: 0;
         top: 0;
+        width: 90px;
     }
     .langDropdown{
         left: 0;
