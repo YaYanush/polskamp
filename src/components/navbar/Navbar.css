@@ -66,6 +66,9 @@
 
 }
 
+.burger-item{
+  z-index: 10000000000;
+}
 
 .burger-link {
   color: #fef9f3;
@@ -73,6 +76,7 @@
   cursor: pointer;
   font-family: ABeeZee, sans-serif;
   margin: 5px;
+  z-index: 10000000000;
 }
 
 .submenu {
