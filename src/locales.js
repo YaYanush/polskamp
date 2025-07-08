@@ -33,7 +33,12 @@ export const translations = {
     tech2: "Currently, none of poultry processing companies in Poland is exclusively focused on the production of MDM , and what is more such production has incidental and marginal manner. They produce MDM on the occasion of their activity concerning the slaughtering , evisceration and further processing of poultry. At Polskamp however, the production is maintained in the mass way which utilizes advanced processing technology thus enabling to produce the best of quality MDM.",
     tech3: "At Polskamp we observe full HACCP, GHP, GMP procedures and process documentation. A highly trained and experienced Quality Assurance team test our products at every stage of the process. All our products are metal detected during production and both chemical and microbilogical testing is carried out in our own on-site modern laboratory with the supervision of veterinary official. These checks and records provide full material traceability of both raw material and our final product to ensure that all legal requirements are met.",
     tech4: "At its disposal Polskamp has the fleet of trucks refrigerators and according to customer preference offers the product for sale on delivered basis. Polskamp can also offer worldwide delivery by sea container and railway section, as appropriate, in association with a range of reputable transport and logistics companies.",
-},
+    poultry_prod: "Poultry production",
+    countries: "COUNTRIES",
+    title_desc: "We export our products to dozens of countries across Europe, Asia, and the Middle East. We invite you to explore our assortment!",
+    modern: "Modern",
+    technol: "Technology of production",
+  },
   pl: {
     products: "PRODUKTY",
     factory: "ZAKŁAD",
@@ -67,7 +72,13 @@ export const translations = {
     tech2: "Obecnie żadna z firm przetwórstwa drobiu w Polsce nie koncentruje się wyłącznie na produkcji mechanicznie oddzielonego mięsa (MDM), a co więcej, produkcja ta ma charakter okazjonalny i marginalny. Produkcja MDM odbywa się przy okazji ich działalności związanej z ubojem, patroszeniem i dalszym przetwórstwem drobiu. Natomiast w Polskamp produkcja MDM prowadzona jest masowo, wykorzystując zaawansowaną technologię przetwórstwa, co pozwala na wytwarzanie MDM najwyższej jakości.",
     tech3: "W Polskamp przestrzegamy pełnych procedur HACCP, GHP, GMP oraz dokumentacji procesowej. Nasz wysoko wykwalifikowany i doświadczony zespół ds. kontroli jakości testuje produkty na każdym etapie procesu. Wszystkie nasze produkty są kontrolowane pod kątem obecności metalu podczas produkcji, a badania chemiczne i mikrobiologiczne przeprowadzane są w nowoczesnym laboratorium na miejscu, pod nadzorem weterynaryjnym. Te kontrole i dokumentacja zapewniają pełną identyfikowalność surowców i produktów finalnych, gwarantując spełnienie wszystkich wymogów prawnych.",
     tech4: "Polskamp dysponuje flotą samochodów-chłodni i według preferencji klienta oferuje sprzedaż produktu z dostawą. Polskamp może również zaoferować dostawy na cały świat drogą morską w kontenerach lub koleją, w zależności od potrzeb, we współpracy z renomowanymi firmami transportowo-logistycznymi.",
-},
+    poultry_prod: "Produkcja drobiu",
+    countries: "KRAJÓW",
+    title_desc: "Eksportujemy nasze produkty do kilkudziesięciu krajów Europy, Azji oraz bliskiego wschodu. Zapraszamy do zapoznania się z asortymentem!",
+    modern: "Nowoczesna",
+    technol: "Technologia produkcji",
+
+  },
  es: {
     products: "PRODUCTOS",
     factory: "FÁBRICA",
@@ -101,5 +112,10 @@ export const translations = {
     tech2: "Actualmente, ninguna empresa procesadora de aves en Polonia se dedica exclusivamente a la producción de MDM, y cuando lo hacen, es de forma marginal y ocasional. Producen MDM como parte de su actividad de sacrificio, evisceración y procesamiento posterior de aves. Sin embargo, en Polskamp, la producción se realiza de forma masiva, utilizando tecnología avanzada, lo que permite obtener MDM de la mejor calidad.",
     tech3: "En Polskamp seguimos completamente los procedimientos HACCP, GHP y GMP, así como toda la documentación del proceso. Un equipo altamente capacitado y experimentado en Garantía de Calidad prueba nuestros productos en cada etapa del proceso. Todos nuestros productos pasan por detectores de metales durante la producción y se someten a pruebas químicas y microbiológicas en nuestro moderno laboratorio interno bajo la supervisión de un veterinario oficial. Estos controles y registros permiten la trazabilidad total tanto de la materia prima como del producto final, garantizando el cumplimiento de todos los requisitos legales.",
     tech4: "Polskamp dispone de una flota de camiones refrigerados y, según las preferencias del cliente, ofrece la entrega directa del producto. También podemos organizar envíos a todo el mundo por contenedor marítimo o por ferrocarril, en colaboración con empresas de transporte y logística de reconocida reputación.",
+    poultry_prod: "Producción avícola",
+    title_desc: "Exportamos nuestros productos a decenas de países en Europa, Asia y Oriente Medio. ¡Le invitamos a conocer nuestra variedad de productos!",
+    countries: "PAÍSES",
+    modern: "Modern",
+    technol: "Technology of production"
   }
 };

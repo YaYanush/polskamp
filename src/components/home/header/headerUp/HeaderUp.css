@@ -254,6 +254,7 @@ button {
   }
   .left .box {
     line-height: 1;
+    width: 100px;
   }
   .left .box h1 {
     font-size: 10px;

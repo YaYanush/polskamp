@@ -2,6 +2,7 @@
   .map-container {
     width: 80%;
     height: 350px;
+    margin: 0 auto;
 
   }
   
@@ -22,8 +23,9 @@
   
   @media (max-width: 768px){
     .map-container {
-      width: 100%;
+      width: 80%;
       height: 100%;
+      margin: 0 auto;
     }
     
   }
