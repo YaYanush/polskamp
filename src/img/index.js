@@ -80,6 +80,11 @@ import Factory from './factory.jpg'
 import Wings_box from './wing_in_box.png'
 import Chicken_legs from './chicken_legs.png'
 import Chicken_box from './chicken_box.png'
+import En1 from './1en.jpg'
+import En2 from './2en.jpg'
+import En3 from './3en.jpg'
+import En4 from './4en.jpg'
+import En5 from './5en.jpg'
 export {
   Logo,
   ChickenMeet,
@@ -162,5 +167,10 @@ export {
   Factory,
   Wings_box,
   Chicken_legs,
-  Chicken_box
+  Chicken_box,
+  En1,
+  En2,
+  En3,
+  En4,
+  En5
 };

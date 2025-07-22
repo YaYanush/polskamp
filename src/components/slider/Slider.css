@@ -56,7 +56,7 @@
     background: none;
   }
   .swiper-slide{
-    height: 350px;
+    max-height: 350px;
   } 
   .slide-image {
     display: block;

@@ -3,11 +3,26 @@
 /* not responsive */
 
 .main {
- margin-top: 15px;
- background-color: rgb(41 41 41 / 95%);
- 
+ background-color: rgb(21 21 21 / 95%);
 }
 
+.slider-wrapper{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.my-swiper {
+  width: 100%;
+  height: auto;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 nav .links {
   display: flex;
   align-items: center;
@@ -161,7 +176,6 @@ button {
   z-index: auto;
 }
 
-
 @media (max-width: 1060px) {
   .logo {
     font-family: "DM Sans", sans-serif;
@@ -312,5 +326,8 @@ button {
   }
   nav {
     justify-content: space-between;
+  }
+  .main{
+    margin-top: 60px;
   }
 }

@@ -3,6 +3,12 @@ import { Halal, Quality } from "../../../../img/index";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./HeaderUp.css";
+import {MDM3,En1,En2,En3,En4,En5} from '../../../../img'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // Хук, чтобы дождаться клиентского рендера
 const useHasMounted = () => {
@@ -16,11 +22,29 @@ const useHasMounted = () => {
 const HeaderUp = () => {
   const { t } = useLanguage();
   const mounted = useHasMounted();
+  const images = [En1,En2,En3,En4,En5]
 
   if (!mounted) return null; // Или можно вернуть прелоадер
 
   return (
     <div className="main">
+      <div className="slider-wrapper">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        slidesPerView={1}
+        className="my-swiper"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide style={{height:"auto"}} key={index}>
+            <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
       <div className="circle1"></div>
       <div className="circle2"></div>
       <motion.div
@@ -45,7 +69,7 @@ const HeaderUp = () => {
         >
           Polskamp<sup style={{ fontSize: "22px" }}>©</sup>
         </motion.h1>
-        <motion.h1
+        <motion.h2
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
@@ -56,7 +80,7 @@ const HeaderUp = () => {
           }}
         >
           {t("poultry_prod")}
-        </motion.h1>
+        </motion.h2>
         
       </motion.div>
 
@@ -73,7 +97,7 @@ const HeaderUp = () => {
               delay: 0.2,
             }}
           >
-            <h1>30+</h1>
+            <h1>90+</h1>
             <p>{t("countries")}</p>
           </motion.div>
 
@@ -105,7 +129,7 @@ const HeaderUp = () => {
           }}
         >
           <img
-            src="https://cdn0.uncomo.com/es/posts/2/4/9/que_pasa_si_como_pollo_en_mal_estado_52942_orig.jpg"
+            src={MDM3}
             alt="face"
           />
         </motion.div>

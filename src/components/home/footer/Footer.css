@@ -3,6 +3,7 @@
   color: #f1f1f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
+  border-top: 1px white solid;
 }
 
 .footerMain {
