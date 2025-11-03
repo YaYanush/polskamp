@@ -7,7 +7,6 @@ import "./TechnologyPage.css";
 const TechnologyPage = () => {
   return (
     <div className="technologyPage">
-      <HeaderUp />
       <Technology />
       <Footer />
     </div>

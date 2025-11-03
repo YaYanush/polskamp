@@ -1,5 +1,4 @@
 import React from "react";
-import { map } from "../../img";
 import Inputs from "./Inputs/Inputs";
 import "./FormOrder.css";
 
@@ -7,7 +6,6 @@ const FormOrder = () => {
   return (
     <div className="formOrderApp">
       <div className="formOrderContainer">
-        <img className="map" src={map} alt="map" />
         <div className="mainFormOrder">
           <div className="wrapperTitleFormOrder">
             <h1 className="titleWarpperForm">Order</h1>

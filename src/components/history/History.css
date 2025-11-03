@@ -1,33 +1,46 @@
 .historyApp {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.historyContainer{
+  width: 90%;
+}
 .textAreaHistory {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.container-textArea{
+  width: 100%;
+}
 .pStyleHistory {
-  font-family: ABeeZee;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 25px;
   color: rgba(254, 249, 243, 1);
 }
 
 .historyimg {
-  width: 488px;
-  height: 358px;
-  float: right;
-  margin: 10px;
+  width: 100%;
+}
+.containerImage{
+ width: 50%;
+ margin: 0 auto;
 }
 
 .sliderImg {
-  width: 1440px;
+  width: 100%;
   margin-top: 20px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 389px) and (max-width: 600px) {
+@media screen and (min-width: 373px) and (max-width: 600px) {
   .historyimg {
     width: 100%;
   }
@@ -41,5 +54,11 @@
   }
   .textAreaHistory{
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerImage{
+    width: 90%;
   }
 }

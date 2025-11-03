@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   gap: 20px;
 }
 
 .next_section{
   display: flex;
-  margin: 10px;
+  margin: 2px;
   gap:30px;
 }
 
@@ -17,6 +18,96 @@
   width: 100%;
   align-items: center;
   
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.next_section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgb(29, 29, 31, 0.95);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow:active {
+  transform: scale(0.9);
+}
+
+/* Place arrows outside the container */
+
+
+.category-link {
+  text-decoration: none; /* Убираем стандартное подчёркивание ссылки */
+}
+
+.img-container {
+  width: 100px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+
+.text-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-family: ABeeZee, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.img-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.75);
+}
+
+.imgLink {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  transition: opacity 0.2s ease;
+  border-radius: 8px;
+}
+.img-container:hover .imgLink {
+  opacity: 0.8;
 }
 
 
@@ -35,7 +126,6 @@
     gap: 3px;
     padding: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px rgb(70, 69, 69) solid;
     
   }
   
@@ -62,8 +152,8 @@
   .imgLink {
     display: block;
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     transition: opacity 0.2s ease;
     border-radius: 8px;
   }

@@ -103,9 +103,57 @@
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media screen and (min-width: 389px) and (max-width: 500px) {
-  /* */
+.title_product{
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 15px;
+  }
 
+
+ /*Specification section*/
+
+ .slider_and_specs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specs_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 400px;
+  background-color: #1d1e26;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+
+.spec_title {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #edc42c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.spec_text {
+  font-family: ABeeZee, sans-serif;
+  color: #fef9f3;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: pre-line;
+  margin: 0;
+}
+
+ /*Specification section*/
+@media screen and (min-width: 379px) and (max-width: 500px) {
+  
   .title_product{
   font-family: Noto Sans TC;
   font-weight: 700;
@@ -115,10 +163,9 @@
   }
 
   .slider_container{
-    padding: 5px;
+  padding: 5px;
   border-radius: 12px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
-  
+
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -126,7 +173,6 @@
   transition: transform 0.3s ease-in-out;
   }
 
-  /* */
   .productInfoSkeletApp {
     width: 100%;
     height: 100%;
@@ -180,4 +226,22 @@
     height: 19px;
   }
 
+
+  .slider_and_specs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specs_container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .spec_title {
+    font-size: 16px;
+  }
+
+  .spec_text {
+    font-size: 14px;
+  }
 }

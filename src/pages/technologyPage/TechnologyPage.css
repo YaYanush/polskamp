@@ -1,10 +1,8 @@
 .technologyPage {
-  width: 1440px;
-  height: 100%;
+  width: 100%;
+  overflow:hidden
 }
 
 @media screen and (min-width: 389px) and (max-width: 500px) {
-  .technologyPage {
-    width: 414px;
-  }
+ 
 }

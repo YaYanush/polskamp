@@ -9,8 +9,9 @@ import HistoryPage from "./pages/historyPage/HistoryPage";
 import TechnologyPage from "./pages/technologyPage/TechnologyPage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-
+import {LanguageSwitcher} from "../src/components/lang/LanguageSwitcher"
+import Navbar from "./components/navbar/Navbar"
+import PdfViewer from "./components/pdf/PdfViewer";
 
 const App = () => {
 
@@ -25,15 +26,17 @@ const App = () => {
   };
   return (
     <>
+      <Navbar />
       <ScrollToTop />
+      <LanguageSwitcher />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/produkty/:id" element={<ProduktyPages />} />
         <Route path="/formOrder" element={<FormOrderPage />} />
         <Route path="/contactForm" element={<ContactPage />} />
         <Route path="/technology" element={<TechnologyPage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/catalogs" element={<PdfViewer />} />
       </Routes>
     </>
   );

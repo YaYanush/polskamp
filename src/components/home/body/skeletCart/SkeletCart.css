@@ -1,10 +1,8 @@
 .skeletApp {
-  width: 315px;
-  height: 340px;
+  width: 262px;
 }
 .skeletAppBase {
-  width: 669px;
-  height: 670px;
+  width: 50%;
 }
 .skeletContainer {
   width: 100%;
@@ -23,29 +21,25 @@
   transform: scale(1.05);
 }
 
-.skeletImg,
-.skeletImgBase {
-  width: 283px;
-  height: 169px;
-  border-radius: 5px;
-  background: rgba(63, 61, 60, 1);
-  margin-top: 10px;
-}
-.skeletImgBase {
-  width: 560px;
-  height: 414px;
+.skeletImg{
+ max-width: 250px;
+ max-height: 150px;
 }
 
+
+.skeletImgBase{
+  width: 75%;
+}
 .skeletInfoContainer,
 .skeletInfoContainerBase {
-  width: 291px;
+  width: 262px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center
 }
 .skeletInfoContainerBase {
-  width: 629px;
+  width: 85%;
 }
 
 .skeletTitle,
@@ -79,7 +73,7 @@
 }
 
 .skeletButtonContainer {
-  width: 100%;
+ 
   height: 28px;
   display: flex;
   align-items: center;
@@ -123,7 +117,7 @@
   transform: translateX(20%);
 }
 
-@media screen and (min-width: 389px) and (max-width: 500px) {
+@media screen and (min-width: 373px) and (max-width: 500px) {
   .skeletAppBase {
     width: 315px;
     height: 100%;
@@ -142,4 +136,13 @@
   .skeletDescriptionBase {
     font-size: 14px;
   }
+
+  .skeletImg,
+.skeletImgBase {
+  max-width: 250px;
+  height: 169px;
+  border-radius: 5px;
+  
+  margin-top: 10px;
+}
 }

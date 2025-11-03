@@ -1,7 +1,19 @@
 .headerApp {
   width: 100%;
-  height: 90vh;
   display: flex;
-  justify-content: flex-end;
-  position: relative;
+  flex-direction: column;
 }
+
+@media screen and (min-width: 350px) and (max-width: 390px) {
+
+  .headerApp{
+    
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  .headerApp{
+    
+  } 
+}
+

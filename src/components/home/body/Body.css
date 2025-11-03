@@ -4,26 +4,29 @@
   width: 100%;
   height: 100%;
   margin-bottom: 70px;
-}
-
-.bodyContainer {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bodyTitle {
-  margin-left: 10px;
   font-family: ABeeZee, sans-serif;
   font-weight: 400;
   font-size: 36px;
   color: rgba(254, 249, 243, 1);
+  text-decoration-line: underline;
+  text-decoration-color: rgba(237, 196, 44, 1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  text-align: center;
 }
 
 .gridBodyContainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;   
+        align-items: center;
+        margin-top: 5%;
+        gap:20px;
 }
 
 .gridBodyContainerTwo {
@@ -31,7 +34,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-/*packing methods*/
+
 .packing-container {
   padding: 50px 20px;
   text-align: center;
@@ -54,7 +57,7 @@
 }
 
 .packing-card {
-  background: #2a2a33;
+  background: #343437;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -65,10 +68,6 @@
 
 .packing-card:hover {
   transform: scale(1.05);
-}
-
-.packing-image {
-  
 }
 
 .packing-name {
@@ -84,11 +83,170 @@
     margin-bottom: 10px;
 }
 
-/*/packing methods*/
-@media screen and (min-width: 389px) and (max-width: 500px) {
-  .bodyContainer {
-    height: 100%;
+
+.photo_container{
+  width: 100%; /* Takes full width of parent */
+  overflow: hidden; /* Prevents image overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title_photo{
+  width: 90%;
+  height: 100%;
+  object-fit:contain
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  
+}
+
+.contact-item {
+  display: flex;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+.labeles_container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top:20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.icon_wrapper{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap:30px;
+}
+.labeles{
+  width: 25%; 
+  object-fit: contain; 
+}
+
+
+.headerLeftFooter {
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  flex-direction: column; 
+  
+}
+.headerLeftFooterTitile {
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(254, 249, 243, 1);
+}
+.headerLeftFooterInfo {
+  width: 100%;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.headerLeftFooterImg {
+  width: 64%;
+  height: 100%;
+}
+.headerLeftFooterLine {
+  height: 100%;
+  border: 1px solid rgba(254, 249, 243, 1);
+}
+.headerLeftFooterMainInfo {
+  width: 198px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.bodyContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prodDescription{
+  margin: auto;
+  width: 90%;
+  padding: 5px;
+  padding-bottom: 15px;
+  border-radius: 12px;
+}
+
+.ourProducts{
+  font-family: ABeeZee, sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height:1.8rem;
+  text-align: center;
+  color: rgba(254, 249, 243, 1);
+  display: inline-block;
+  max-width: 100%; 
+  word-wrap: break-word; 
+  margin-top:10px;
+}
+
+.contact-us-label{
+    font-family: ABeeZee, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(254, 249, 243, 1);
+    text-decoration-line: underline;
+    text-decoration-color: rgba(237, 196, 44, 1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    text-align: center;
   }
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    span{
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: rgba(254, 249, 243, 1);
+    }
+  }
+.map-wrapper{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 5%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+@media screen and (min-width: 373px) and (max-width: 500px) {
+
+
+  .bodyContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  
   .bodyTitle {
     justify-content: center;
     font-size: 1.2rem;
@@ -98,7 +256,7 @@
   }
   .gridBodyContainer {
     display: flex;
-    flex-direction: column;
+   
     align-items: center;
     margin-top: 10%;
   }
@@ -107,23 +265,78 @@
     flex-direction: column;
   }
   .ourProducts{
-  margin-left: 20px;
-  font-family: ABeeZee, sans-serif;
-  font-weight: 100;
-  font-size: 0.9rem;
-  color: rgba(254, 249, 243, 1);
-  display: inline-block;
-  max-width: 100%; /* Ограничивает ширину */
-  word-wrap: break-word; /* Переносит длинные слова */
+    font-family: ABeeZee, sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgba(254, 249, 243, 1);
+    display: inline-block;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    margin-top:10px;
   }
   .prodDescription{
     margin:auto;
-    width: 80%;
+    width: 90%;
     padding: 5px;
     padding-bottom: 15px;
     border-radius: 12px;
   }
-  .bodyApp {
-    margin-top: 10%;
+
+  .labeles_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10%;
+    margin-top:10%;
   }
+  
+  .icon_wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .labeles{
+    width: 30%; 
+    object-fit: contain; 
+  }
+  .icon {
+    font-size: 20px;
+    color: rgba(237, 196, 44, 1); 
+  }
+  .map-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    span{
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: rgba(254, 249, 243, 1);
+    }
+  }
+  .contact-us-label{
+    font-family: ABeeZee, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(254, 249, 243, 1);
+    text-decoration-line: underline;
+    text-decoration-color: rgba(237, 196, 44, 1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+  }
+  
 }
