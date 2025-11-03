@@ -85,12 +85,9 @@ import En2 from './2en.jpg'
 import En3 from './3en.jpg'
 import En4 from './4en.jpg'
 import En5 from './5en.jpg'
-<<<<<<< HEAD
 import En6 from './En6.jpg'
 import En7 from './En7.jpg'
 
-=======
->>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 export {
   Logo,
   ChickenMeet,
@@ -178,11 +175,7 @@ export {
   En2,
   En3,
   En4,
-<<<<<<< HEAD
   En5,
   En6,
   En7
-=======
-  En5
->>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 };

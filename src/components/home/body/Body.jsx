@@ -8,12 +8,8 @@ import Film from '../../video/Film'
 import mp4 from '../../../img/video.mp4'
 import { motion } from "framer-motion";
 import { useLanguage } from "../../../LanguageContext";
-<<<<<<< HEAD
 import ProductInfoSkelet  from "../../product/productInfoSkelet/ProductInfoSkelet";
 import dataProduct from "../../product/dataProduct";
-
-=======
->>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 
 import {
   Product1,
@@ -41,10 +37,7 @@ const Body = () => {
     { name: "Cartons", image: Cartons },
   ];
 
-<<<<<<< HEAD
   const product = dataProduct.slice(0, 3);
-=======
->>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
   const products = [
     { src: C1, name: "Hot dogs"},
     { src: C2, name: "Breaded chicken products"},
@@ -67,7 +60,6 @@ const Body = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-<<<<<<< HEAD
           <span className="ourProducts">{t("polskamp_meat")}</span>
         </motion.div>
         <div style={{marginTop:"10%"}}>
@@ -78,11 +70,6 @@ const Body = () => {
         <div>
           <h1 className="bodyTitle">{t("our_prod")}</h1>
         </div>
-=======
-          <h1 className="bodyTitle">{t("our_prod")}<br /></h1>
-          <span className="ourProducts">{t("polskamp_meat")}</span>
-        </motion.div>
->>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 
         <motion.div
           className="gridBodyContainer"
