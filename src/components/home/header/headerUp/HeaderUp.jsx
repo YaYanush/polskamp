@@ -3,7 +3,11 @@ import { Halal, Quality } from "../../../../img/index";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./HeaderUp.css";
+<<<<<<< HEAD
 import {MDM3,En1,En2,En3,En4,En5,En6,En7} from '../../../../img'
+=======
+import {MDM3,En1,En2,En3,En4,En5} from '../../../../img'
+>>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -22,7 +26,11 @@ const useHasMounted = () => {
 const HeaderUp = () => {
   const { t } = useLanguage();
   const mounted = useHasMounted();
+<<<<<<< HEAD
   const images = [En1,En2,En3,En4,En5,En6,En7]
+=======
+  const images = [En1,En2,En3,En4,En5]
+>>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
 
   if (!mounted) return null; // Или можно вернуть прелоадер
 
@@ -34,11 +42,19 @@ const HeaderUp = () => {
         navigation
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
+<<<<<<< HEAD
         slidesPerView="auto"
         className="my-swiper"
       >
         {images.map((image, index) => (
           <SwiperSlide  className="custom-slide" key={index}>
+=======
+        slidesPerView={1}
+        className="my-swiper"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide style={{height:"auto"}} key={index}>
+>>>>>>> e112d81b2e139279f7888ed2b183ee02e1560aaa
             <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
           </SwiperSlide>
         ))}
