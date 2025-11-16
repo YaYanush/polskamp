@@ -16,7 +16,7 @@ const pdfFiles = [
 const PdfViewer = () => {
   return (
     <div className="pdf-viewer-container">
-      <h2 className="pdf-header">📄 Broszury</h2>
+      <h2 className="pdf-header">📄</h2>
       <div className="pdf-list">
         {pdfFiles.map((pdf, index) => (
           <div key={index} className="pdf-card">

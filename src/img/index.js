@@ -87,6 +87,8 @@ import En4 from './4en.jpg'
 import En5 from './5en.jpg'
 import En6 from './En6.jpg'
 import En7 from './En7.jpg'
+import Tablica from './tablica.jpg'
+import Tablica1 from './tablica1.jpg'
 
 export {
   Logo,
@@ -177,5 +179,7 @@ export {
   En4,
   En5,
   En6,
-  En7
+  En7,
+  Tablica,
+  Tablica1
 };

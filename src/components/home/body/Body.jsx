@@ -28,6 +28,8 @@ import {
   C5,
   C6,
   C7,
+  Tablica,
+  Tablica1
 } from "../../../img/index";
 import "./Body.css";
 
@@ -210,6 +212,7 @@ const Body = () => {
           </div>
         </motion.div>
 
+
         <motion.div
           className="map-wrapper"
           initial={{ opacity: 0, y: 40 }}
@@ -219,6 +222,24 @@ const Body = () => {
         >
           <Map />
         </motion.div>
+        <motion.div
+          className="photo-section"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={Tablica}
+            alt="Production 1"
+            className="photo-item"
+          />
+          <img
+            src={Tablica1}
+            alt="Production 2"
+            className="photo-item"
+          />
+      </motion.div>
       </div>
     </div>
   );

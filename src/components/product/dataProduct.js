@@ -200,9 +200,9 @@ const dataProduct = [
     imgCategory: [Mortadella2,Mortadella_packed,WhitePallet],
     pacing1: Photo1,
     pacing2: Photo2,
-    nameCategoryPL: "Mortadela po Włosku",
-    nameCategoryEN: "Mortadella ala Italiana",
-    nameCategoryES: "Mortadela a la Italiana",
+    nameCategoryPL: "Mortadela z czosnkiem",
+    nameCategoryEN: "Mortadella with garlic",
+    nameCategoryES: "Mortadela al ajo",
 
     textValuePL: "Wartość energetyczna: 682 kJ / 164 kcal \n Tłuszcz: 12,6 g, w tym kwasy tłuszczowe nasycone: 4,4 g \n Węglowodany: 1,9 g, w tym cukry: 0,4 g \n Białko: 10,4 g \n Sól: 2,2 g",
     textValueEN: "Energy value: 682 kJ / 164 kcal \n Fat: 12.6 g, including saturated fatty acids: 4.4 g \n Carbohydrates: 1.9 g, including sugars: 0.4 g \n Protein: 10.4 g \n Salt: 2.2 g",
@@ -286,7 +286,7 @@ const dataProduct = [
   {
     id:12,
     idCategory: 4,
-    imgCategory: [Sausages2,Chorizo,Desc_chorizo,WhitePallet],
+    imgCategory: [Sausages2,Chorizo,WhitePallet],
     pacing1: Photo1,
     pacing2: Photo2,
     nameCategoryPL: "Chorizo",

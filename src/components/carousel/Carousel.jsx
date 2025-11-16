@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Carousel.css";
 
 const ImageCarousel = ({products = []}) => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isThrottled, setIsThrottled] = useState(false);
   const visibleSlides = 4;

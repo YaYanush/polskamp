@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import dataCategory from "../../components/product/dataCategory"
 import { useLanguage } from "../../LanguageContext";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -19,7 +20,7 @@ const Navbar = () => {
     setOpenSubmenu((prev) => (prev === key ? null : key));
   };
 
-  const { t } = useLanguage();
+  const { t,language  } = useLanguage();
 
   return (
     <header className="header-up">
@@ -42,7 +43,7 @@ const Navbar = () => {
             <div className="nav-submenu">
               {dataCategory.map((cat) => (
                 <Link key={cat.id} to={`/product/${cat.id}`} className="submenu-link">
-                  {cat.title}
+                  {cat["title" + language.toUpperCase()]}
                 </Link>
               ))}
             </div>
@@ -56,7 +57,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/contactForm" className="nav-link">{t("contact")}</Link>
-          <Link to="/catalogs" className="nav-link">CATALOGS</Link>
+          <Link to="/catalogs" className="nav-link">{t("catalogs")}</Link>
         </nav>
 
         {/* Mobile Nav Menu */}

@@ -38,13 +38,14 @@ export const translations = {
     title_desc: "We export our products to dozens of countries across Europe, Asia, and the Middle East. We invite you to explore our assortment!",
     modern: "Modern",
     technol: "Technology of production",
+    catalogs: "CATALOGS"
   },
   pl: {
     products: "PRODUKTY",
     factory: "ZAKŁAD",
     contact: "KONTAKT",
-    history: "History",
-    technology: "Technology",
+    history: "Historia",
+    technology: "Technologia",
     leader_of: "Lider produkcji farszu drobiowego",
     msm_feature: "MSM to nasz główny produkt!",
     our_prod: "Nasze produkty:",
@@ -77,7 +78,7 @@ export const translations = {
     title_desc: "Eksportujemy nasze produkty do kilkudziesięciu krajów Europy, Azji oraz bliskiego wschodu. Zapraszamy do zapoznania się z asortymentem!",
     modern: "Nowoczesna",
     technol: "Technologia produkcji",
-
+    catalogs: "KATALOGI"
   },
  es: {
     products: "PRODUCTOS",
@@ -116,6 +117,7 @@ export const translations = {
     title_desc: "Exportamos nuestros productos a decenas de países en Europa, Asia y Oriente Medio. ¡Le invitamos a conocer nuestra variedad de productos!",
     countries: "PAÍSES",
     modern: "Modern",
-    technol: "Technology of production"
+    technol: "Technology of production",
+    catalogs: "CATALOGS"
   }
 };

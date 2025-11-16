@@ -238,6 +238,47 @@
     border-radius: 10px;
   }
 
+
+.photo-section {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* выравнивает по вертикали */
+  gap: 20px;
+  flex-wrap: nowrap; /* не переносим на больших экранах */
+}
+
+/* одинаковая высота и аккуратная обрезка */
+.photo-item {
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 адаптивность */
+@media (max-width: 768px) {
+  .photo-section {
+    flex-direction: column; /* на мобильных — друг под другом */
+    align-items: center;
+    gap: 16px;
+  }
+
+  .photo-item {
+    max-width: 90%;
+    height: 220px;
+  }
+}
+  
+
 @media screen and (min-width: 373px) and (max-width: 500px) {
 
 
