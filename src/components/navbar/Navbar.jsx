@@ -86,7 +86,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/contactForm" className="burger-link" onClick={toggleMenu}>{t("contact")}</Link>
-          <Link to="/catalogs" className="burger-link" onClick={toggleMenu}>CATALOGS</Link>
+          <Link to="/catalogs" className="burger-link" onClick={toggleMenu}>{t("catalogs")}</Link>
         </nav>
       </div>
     </header>
