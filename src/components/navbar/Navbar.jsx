@@ -68,7 +68,7 @@ const Navbar = () => {
               <div className="submenu">
                 {dataCategory.map((cat) => (
                   <Link key={cat.id} to={`/product/${cat.id}`} className="submenu-link" onClick={toggleMenu}>
-                    {cat.title}
+                    {cat["title" + language.toUpperCase()]}
                   </Link>
                 ))}
               </div>

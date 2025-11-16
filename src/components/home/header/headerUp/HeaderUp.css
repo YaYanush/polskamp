@@ -299,8 +299,7 @@ button {
   }
   button {
     font-size: 8px;
-    border: 2px solid rgba(248, 165, 11, 0.6);
-    color: rgba(248, 165, 11, 0.6);
+    border: none;
   }
   .mid img {
     width: 300px;
